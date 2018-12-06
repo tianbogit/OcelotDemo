@@ -1,0 +1,42 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api/values", // 下游游请求模板
+      "DownstreamScheme": "https", //下游服务 schema
+      "UpstreamPathTemplate": "/api/products", // 上游请求模板
+      "UpstreamHttpMethod": [ "Get", "Post" ], // 上游请求http方法
+      //下游服务的地址，如果使用LoadBalancer的话这里可以填多项
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44373
+        }
+      ],
+      "Key": "Products"
+    },
+    {
+      "DownstreamPathTemplate": "/api/values",
+      "DownstreamScheme": "https",
+      "UpstreamPathTemplate": "/api/users",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44394
+        }
+      ],
+      "Key": "Users"
+    }
+  ],
+  "Aggregates": [
+    {
+      "ReRouteKeys": [
+        "Products",
+        "Users"
+      ],
+      "UpstreamPathTemplate": "/"
+    }
+  ],
+  "GlobalConfiguration": {
+  }
+}

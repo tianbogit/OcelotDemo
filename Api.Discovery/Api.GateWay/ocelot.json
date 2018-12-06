@@ -1,0 +1,37 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api/values", // 下游游请求模板
+      "DownstreamScheme": "https", //下游服务 schema
+      "UpstreamPathTemplate": "/api/{controller}", // 上游请求模板
+      "UpstreamHttpMethod": [ "Get", "Post" ], // 上游请求http方法
+      //下游服务的地址，如果使用LoadBalancer的话这里可以填多项
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44373
+        },
+        {
+          "Host": "localhost",
+          "Port": 44394
+        }
+      ],
+      //负载均衡 RoundRobin(轮询)/LeastConnection(最少连接数)/CookieStickySessions(相同的Sessions或Cookie发往同一个地址)/NoLoadBalancer(不使用负载)
+      "LoadBalancerOptions": {
+        "Type": "LeastConnection"
+      },
+      //服务注册、发现
+      "ServiceName": "ApiService",
+      "UseServiceDiscovery": true
+    }
+  ],
+  "GlobalConfiguration": {
+    //Consul服务发现的地址和端口"
+    "ServiceDiscoveryProvider": {
+      "Host": "localhost",
+      "Port": 8500
+    },
+    // 告诉客户端网关对外暴露的域名
+    "BaseUrl": "https://localhost:44366/"
+  }
+}

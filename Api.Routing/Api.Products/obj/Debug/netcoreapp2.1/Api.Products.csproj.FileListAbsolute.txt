@@ -1,0 +1,14 @@
+F:\netcore\ocelot\Api.Routing\Api.Products\bin\Debug\netcoreapp2.1\Api.Products.deps.json
+F:\netcore\ocelot\Api.Routing\Api.Products\bin\Debug\netcoreapp2.1\Api.Products.runtimeconfig.json
+F:\netcore\ocelot\Api.Routing\Api.Products\bin\Debug\netcoreapp2.1\Api.Products.runtimeconfig.dev.json
+F:\netcore\ocelot\Api.Routing\Api.Products\bin\Debug\netcoreapp2.1\Api.Products.dll
+F:\netcore\ocelot\Api.Routing\Api.Products\bin\Debug\netcoreapp2.1\Api.Products.pdb
+F:\netcore\ocelot\Api.Routing\Api.Products\obj\Debug\netcoreapp2.1\Api.Products.csprojAssemblyReference.cache
+F:\netcore\ocelot\Api.Routing\Api.Products\obj\Debug\netcoreapp2.1\Api.Products.csproj.CoreCompileInputs.cache
+F:\netcore\ocelot\Api.Routing\Api.Products\obj\Debug\netcoreapp2.1\Api.Products.RazorAssemblyInfo.cache
+F:\netcore\ocelot\Api.Routing\Api.Products\obj\Debug\netcoreapp2.1\Api.Products.RazorAssemblyInfo.cs
+F:\netcore\ocelot\Api.Routing\Api.Products\obj\Debug\netcoreapp2.1\Api.Products.AssemblyInfoInputs.cache
+F:\netcore\ocelot\Api.Routing\Api.Products\obj\Debug\netcoreapp2.1\Api.Products.AssemblyInfo.cs
+F:\netcore\ocelot\Api.Routing\Api.Products\obj\Debug\netcoreapp2.1\Api.Products.RazorTargetAssemblyInfo.cache
+F:\netcore\ocelot\Api.Routing\Api.Products\obj\Debug\netcoreapp2.1\Api.Products.dll
+F:\netcore\ocelot\Api.Routing\Api.Products\obj\Debug\netcoreapp2.1\Api.Products.pdb
