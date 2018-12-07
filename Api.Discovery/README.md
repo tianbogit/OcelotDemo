@@ -1,26 +1,3 @@
-
-## 负载均衡
-
- 	  //下游服务的地址，如果使用LoadBalancer的话这里可以填多项
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": 44373
-        },
-        {
-          "Host": "localhost",
-          "Port": 44394
-        }
-      ],
-      //负载均衡 RoundRobin(轮询)/LeastConnection(最少连接数)/CookieStickySessions(相同的Sessions或Cookie发往同一个地址)/NoLoadBalancer(不使用负载)
-      "LoadBalancerOptions": {
-        "Type": "LeastConnection"
-      }
-
-访问Api.GateWay，如下所示自动实现了负载均衡：
-
-
-
 ## 服务注册、发现、健康检查
 
 Consul支持配置文件和Api两种方式服务注册、服务发现
@@ -41,7 +18,7 @@ consul agent -server -bootstrap-expect 1 -data-dir F:\tool\consul\tmp -advertise
 
 - config-file 指定配置启动
 
-#### Consul基于配置文件实习那服务注册、发现
+#### Consul基于配置文件实习那服务注册发现，健康检查
 
 	{
 	  "encrypt": "7TnJPB4lKtjEcCWWjN6jSA==",
@@ -87,3 +64,71 @@ consul agent -server -bootstrap-expect 1 -data-dir F:\tool\consul\tmp -advertise
 
 
  
+## 通过Ocelot+Consul发现服务并实现负载均衡
+
+### 安装 install-package Ocelot 和 Ocelot.Provider.Consul
+
+
+### 修改Startup.cs
+
+	public void ConfigureServices(IServiceCollection services)
+	{
+        //注册服务
+	    services.AddOcelot(Configuration).AddConsul();
+	    services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+	}
+	
+	 public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+    {
+        if (env.IsDevelopment())
+        {
+            app.UseDeveloperExceptionPage();
+        }
+        else
+        {
+            app.UseHsts();
+        }
+
+        app.UseHttpsRedirection();
+		// 加入管道
+        app.UseOcelot().Wait();
+        app.UseMvc();
+    }
+
+### 配置ocelot.json
+
+	{
+	  "ReRoutes": [
+	    {
+	      "DownstreamPathTemplate": "/api/values", // 下游游请求模板
+	      "DownstreamScheme": "https", //下游服务 schema
+	      "UpstreamPathTemplate": "/api/{controller}", // 上游请求模板
+	      "UpstreamHttpMethod": [ "Get", "Post" ], // 上游请求http方法
+	      //负载均衡 RoundRobin(轮询)/LeastConnection(最少连接数)/CookieStickySessions(相同的Sessions或Cookie发往同一个地址)/NoLoadBalancer(不使用负载)
+	      "LoadBalancerOptions": {
+	        "Type": "RoundRobin"
+	      },
+	      //服务注册、发现
+	      "ServiceName": "ApiService",
+	      "UseServiceDiscovery": true
+	    }
+	  ],
+	  "GlobalConfiguration": {
+	    //Consul服务发现的地址和端口"
+	    "ServiceDiscoveryProvider": {
+	      "Host": "localhost",
+	      "Port": 8500,
+	      "Type": "Consul"
+	
+	      //"Type": "PollConsul",#从consul中拉取最新的services，而不是每次请求都去consul中请求
+	      //"PollingInterval": 100 #频率（ms）
+	
+	    },
+	    // 告诉客户端网关对外暴露的域名
+	    "BaseUrl": "https://localhost:44366/"
+	  }
+	}
+
+
+
+访问Api.GateWay（https://localhost:44366/api/values），自动实现了负载均衡。

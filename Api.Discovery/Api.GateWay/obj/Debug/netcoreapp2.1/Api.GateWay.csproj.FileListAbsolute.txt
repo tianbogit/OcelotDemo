@@ -27,3 +27,4 @@ F:\netcore\ocelot\Api.Discovery\Api.GateWay\obj\Debug\netcoreapp2.1\Api.GateWay.
 F:\netcore\ocelot\Api.Discovery\Api.GateWay\obj\Debug\netcoreapp2.1\Api.GateWay.pdb
 F:\netcore\ocelot\Api.Discovery\Api.GateWay\bin\Debug\netcoreapp2.1\ocelot.json
 F:\netcore\ocelot\Api.Discovery\Api.GateWay\obj\Debug\netcoreapp2.1\Api.GateWay.csprojAssemblyReference.cache
+F:\netcore\ocelot\Api.Discovery\Api.GateWay\bin\Debug\netcoreapp2.1\appsettings.json
