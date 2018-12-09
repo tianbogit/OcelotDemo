@@ -1,0 +1,14 @@
+E:\net.core\OcelotDemo\Api.Authentication\Api.XUnitTest\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+E:\net.core\OcelotDemo\Api.Authentication\Api.XUnitTest\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+E:\net.core\OcelotDemo\Api.Authentication\Api.XUnitTest\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+E:\net.core\OcelotDemo\Api.Authentication\Api.XUnitTest\bin\Debug\netcoreapp2.1\Api.XUnitTest.deps.json
+E:\net.core\OcelotDemo\Api.Authentication\Api.XUnitTest\bin\Debug\netcoreapp2.1\Api.XUnitTest.runtimeconfig.json
+E:\net.core\OcelotDemo\Api.Authentication\Api.XUnitTest\bin\Debug\netcoreapp2.1\Api.XUnitTest.runtimeconfig.dev.json
+E:\net.core\OcelotDemo\Api.Authentication\Api.XUnitTest\bin\Debug\netcoreapp2.1\Api.XUnitTest.dll
+E:\net.core\OcelotDemo\Api.Authentication\Api.XUnitTest\obj\Debug\netcoreapp2.1\Api.XUnitTest.csprojAssemblyReference.cache
+E:\net.core\OcelotDemo\Api.Authentication\Api.XUnitTest\obj\Debug\netcoreapp2.1\Api.XUnitTest.csproj.CoreCompileInputs.cache
+E:\net.core\OcelotDemo\Api.Authentication\Api.XUnitTest\obj\Debug\netcoreapp2.1\Api.XUnitTest.AssemblyInfoInputs.cache
+E:\net.core\OcelotDemo\Api.Authentication\Api.XUnitTest\obj\Debug\netcoreapp2.1\Api.XUnitTest.AssemblyInfo.cs
+E:\net.core\OcelotDemo\Api.Authentication\Api.XUnitTest\bin\Debug\netcoreapp2.1\Api.XUnitTest.pdb
+E:\net.core\OcelotDemo\Api.Authentication\Api.XUnitTest\obj\Debug\netcoreapp2.1\Api.XUnitTest.dll
+E:\net.core\OcelotDemo\Api.Authentication\Api.XUnitTest\obj\Debug\netcoreapp2.1\Api.XUnitTest.pdb

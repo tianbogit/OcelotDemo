@@ -1,0 +1,17 @@
+E:\net.core\OcelotDemo\Api.Authentication\Api.Auth\bin\Debug\netcoreapp2.1\Api.Auth.deps.json
+E:\net.core\OcelotDemo\Api.Authentication\Api.Auth\bin\Debug\netcoreapp2.1\Api.Auth.runtimeconfig.json
+E:\net.core\OcelotDemo\Api.Authentication\Api.Auth\bin\Debug\netcoreapp2.1\Api.Auth.runtimeconfig.dev.json
+E:\net.core\OcelotDemo\Api.Authentication\Api.Auth\bin\Debug\netcoreapp2.1\Api.Auth.dll
+E:\net.core\OcelotDemo\Api.Authentication\Api.Auth\bin\Debug\netcoreapp2.1\Api.Auth.pdb
+E:\net.core\OcelotDemo\Api.Authentication\Api.Auth\obj\Debug\netcoreapp2.1\Api.Auth.csprojAssemblyReference.cache
+E:\net.core\OcelotDemo\Api.Authentication\Api.Auth\obj\Debug\netcoreapp2.1\Api.Auth.csproj.CoreCompileInputs.cache
+E:\net.core\OcelotDemo\Api.Authentication\Api.Auth\obj\Debug\netcoreapp2.1\Api.Auth.RazorAssemblyInfo.cache
+E:\net.core\OcelotDemo\Api.Authentication\Api.Auth\obj\Debug\netcoreapp2.1\Api.Auth.RazorAssemblyInfo.cs
+E:\net.core\OcelotDemo\Api.Authentication\Api.Auth\obj\Debug\netcoreapp2.1\Api.Auth.AssemblyInfoInputs.cache
+E:\net.core\OcelotDemo\Api.Authentication\Api.Auth\obj\Debug\netcoreapp2.1\Api.Auth.AssemblyInfo.cs
+E:\net.core\OcelotDemo\Api.Authentication\Api.Auth\obj\Debug\netcoreapp2.1\Api.Auth.RazorTargetAssemblyInfo.cache
+E:\net.core\OcelotDemo\Api.Authentication\Api.Auth\obj\Debug\netcoreapp2.1\Api.Auth.dll
+E:\net.core\OcelotDemo\Api.Authentication\Api.Auth\obj\Debug\netcoreapp2.1\Api.Auth.pdb
+E:\net.core\OcelotDemo\Api.Authentication\Api.Auth\bin\Debug\netcoreapp2.1\Api.AuthorizePolicy.dll
+E:\net.core\OcelotDemo\Api.Authentication\Api.Auth\bin\Debug\netcoreapp2.1\Api.AuthorizePolicy.pdb
+E:\net.core\OcelotDemo\Api.Authentication\Api.Auth\obj\Debug\netcoreapp2.1\Api.Auth.csproj.CopyComplete

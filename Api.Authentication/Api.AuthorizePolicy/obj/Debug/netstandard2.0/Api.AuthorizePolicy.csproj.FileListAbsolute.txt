@@ -1,0 +1,9 @@
+E:\net.core\OcelotDemo\Api.Authentication\Api.AuthorizePolicy\bin\Debug\netstandard2.0\Api.AuthorizePolicy.deps.json
+E:\net.core\OcelotDemo\Api.Authentication\Api.AuthorizePolicy\bin\Debug\netstandard2.0\Api.AuthorizePolicy.dll
+E:\net.core\OcelotDemo\Api.Authentication\Api.AuthorizePolicy\obj\Debug\netstandard2.0\Api.AuthorizePolicy.csprojAssemblyReference.cache
+E:\net.core\OcelotDemo\Api.Authentication\Api.AuthorizePolicy\obj\Debug\netstandard2.0\Api.AuthorizePolicy.csproj.CoreCompileInputs.cache
+E:\net.core\OcelotDemo\Api.Authentication\Api.AuthorizePolicy\obj\Debug\netstandard2.0\Api.AuthorizePolicy.AssemblyInfoInputs.cache
+E:\net.core\OcelotDemo\Api.Authentication\Api.AuthorizePolicy\obj\Debug\netstandard2.0\Api.AuthorizePolicy.AssemblyInfo.cs
+E:\net.core\OcelotDemo\Api.Authentication\Api.AuthorizePolicy\bin\Debug\netstandard2.0\Api.AuthorizePolicy.pdb
+E:\net.core\OcelotDemo\Api.Authentication\Api.AuthorizePolicy\obj\Debug\netstandard2.0\Api.AuthorizePolicy.dll
+E:\net.core\OcelotDemo\Api.Authentication\Api.AuthorizePolicy\obj\Debug\netstandard2.0\Api.AuthorizePolicy.pdb

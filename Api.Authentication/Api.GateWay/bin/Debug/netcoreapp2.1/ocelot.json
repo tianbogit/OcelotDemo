@@ -1,0 +1,91 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/productapi/values",
+      "DownstreamScheme": "https",
+      "DownstreamPort": 44373,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/productapi/values",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      },
+      "HttpHandlerOptions": {
+        "AllowAutoRedirect": false,
+        "UseCookieContainer": false
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "GSWBearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/productapi/denied",
+      "DownstreamScheme": "https",
+      "DownstreamPort": 44373,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/productapi/denied",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      },
+      "AuthenticationOptions": {
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/usersapi/values",
+      "DownstreamScheme": "https",
+      "DownstreamPort": 44394,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/usersapi/values",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      },
+      "HttpHandlerOptions": {
+        "AllowAutoRedirect": false,
+        "UseCookieContainer": false
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "GSWBearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/usersapi/denied",
+      "DownstreamScheme": "https",
+      "DownstreamPort": 44394,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/usersapi/denied",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      },
+      "AuthenticationOptions": {
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/authapi/login",
+      "DownstreamScheme": "https",
+      "DownstreamPort": 44318,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/authapi/login",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      },
+      "AuthenticationOptions": {
+      }
+    }
+  ]
+}
